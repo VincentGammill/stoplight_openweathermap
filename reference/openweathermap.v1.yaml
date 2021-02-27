@@ -51,7 +51,7 @@ paths:
                         id:
                           type: number
                           description: Weather condition id
-                          example: '''803'''
+                          example: 803
                         main:
                           type: string
                           minLength: 1
@@ -203,6 +203,42 @@ paths:
                   - id
                   - name
                   - cod
+              examples:
+                example-1:
+                  value:
+                    coord:
+                      lon: 145.77
+                      lat: -16.92
+                    weather:
+                      - id: 803
+                        main: clouds
+                        description: broken clouds
+                        icon: 04n
+                    base: cmc stations
+                    main:
+                      temp: 293.25
+                      feels_like: 41.16
+                      temp_min: 289.82
+                      temp_max: 295.67
+                      pressure: 1019
+                      humidity: 82
+                    visibility: 16093
+                    wind:
+                      speed: 5.7
+                      deg: 351
+                    clouds:
+                      all: 67
+                    dt: 1435658272
+                    sys:
+                      type: 1
+                      id: 8166
+                      country: AU
+                      sunrise: 1435610796
+                      sunset: 1435650870
+                    timezone: -28800
+                    id: 2172797
+                    name: Cairns
+                    cod: 200
       operationId: get-weather
       tags:
         - Weather endpoints
@@ -263,48 +299,7 @@ components:
       description: '**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`.'
       schema:
         type: string
-  schemas:
-    User:
-      title: User
-      type: object
-      description: ''
-      x-examples:
-        Alice Smith:
-          id: 142
-          firstName: Alice
-          lastName: Smith
-          email: alice.smith@gmail.com
-          dateOfBirth: '1997-10-31'
-          emailVerified: true
-          signUpDate: '2019-08-24'
-      properties:
-        id:
-          type: integer
-          description: Unique identifier for the given user.
-        firstName:
-          type: string
-        lastName:
-          type: string
-        email:
-          type: string
-          format: email
-        dateOfBirth:
-          type: string
-          format: date
-          example: '1997-10-31'
-        emailVerified:
-          type: boolean
-          description: Set to true if the user's email has been verified.
-        createDate:
-          type: string
-          format: date
-          description: The date that the user was created.
-      required:
-        - id
-        - firstName
-        - lastName
-        - email
-        - emailVerified
+  schemas: {}
   securitySchemes:
     app_id:
       name: appid
