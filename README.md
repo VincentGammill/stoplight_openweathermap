@@ -1,2 +1,4 @@
 # OpenWeatherMap API
-A repository for me to use to learn how to use the Stoplight.io UI to build an OpenAPI spec.
+A repository documenting my learning of REST APIs, the OpenAPI spec, and more. 
+
+Credit to Tom Johnson (idratherbewriting) for his excellent [REST API documentation course](https://idratherbewriting.com/learnapidoc/)
