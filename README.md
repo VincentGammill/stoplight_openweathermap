@@ -1,2 +1,2 @@
-# git-learning
-A place for me to learn how git works
+# OpenWeatherMap API
+A repository for me to use to learn how to use the Stoplight.io UI to build an OpenAPI spec.
